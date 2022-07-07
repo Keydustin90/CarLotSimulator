@@ -44,6 +44,8 @@ namespace CarLotSimulator
             thomasCar.MakeEngineNoise(thomasCar.EngieNoise);
             otherCar.MakeEngineNoise(otherCar.MakeEngineNoise);
 
+            Console.WriteLine($"Number of car created: {CarLot.numberOfCars}");
+
             foreach(var car in lot.Cars)
             {
                 Console.WriteLine($"Year: {car.Year} Make: {car.Make}");

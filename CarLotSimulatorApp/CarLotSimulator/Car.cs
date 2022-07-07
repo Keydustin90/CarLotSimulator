@@ -5,6 +5,7 @@ namespace CarLotSimulator
     {
         public Car()
         {
+            CarLot.numberOfCars++;
         }
 
         public Car(int year,
@@ -41,6 +42,6 @@ namespace CarLotSimulator
 
         internal void MakeEngineNoise(Action<string> makeEngineNoise)
         {
-            throw new NotImplementedException();
+            Console.WriteLine(makeEngineNoise); 
         }
     }
